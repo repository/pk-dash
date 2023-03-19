@@ -32,7 +32,7 @@ const Navbar: FC = () => {
           <ul className="flex h-full ltr:ml-auto rtl:mr-auto">
             <NavbarProfileMenu />
             <NavbarItem as="button">
-              <TbAdjustments size={22} />
+              <TbAdjustments size={22} strokeWidth="1.25" />
             </NavbarItem>
           </ul>
         </div>

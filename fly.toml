@@ -1,9 +1,9 @@
-# fly.toml file generated for pk-dash on 2023-03-18T23:33:50-07:00
+# fly.toml file generated for pk-dash on 2023-03-19T09:18:29-07:00
 
 app = "pk-dash"
 kill_signal = "SIGINT"
 kill_timeout = 5
-primary_region = "lax"
+primary_region = "iad"
 processes = []
 
 [env]
@@ -13,7 +13,7 @@ processes = []
 
 [[services]]
   http_checks = []
-  internal_port = 8080
+  internal_port = 3000
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
