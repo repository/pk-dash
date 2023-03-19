@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .default-transition {
+    @apply duration-150 ease-in-out;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  }
+
+  .default-focus {
+    @apply focus:outline-none focus:ring-2 ring-blue-400/60;
+  }
+
+  .default-interactable {
+    @apply hover:bg-pk-100 hover:text-pk-500 active:bg-pk-200 active:text-pk-600 dark:hover:bg-pk-400 dark:hover:text-white dark:active:bg-pk-500 dark:active:text-white;
+  }
+
+  .default-interactable-active {
+    @apply bg-pk-200 text-pk-600 dark:bg-pk-500 dark:text-white;
+  }
+}
